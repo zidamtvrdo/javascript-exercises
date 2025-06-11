@@ -5,7 +5,7 @@ const findTheOldest = function(arr) {
             person.yearOfDeath = currentYear;
         }
     }
-    const newArr = arr.sort((a, b) => {
+    const newArr = arr.toSorted((a, b) => {
         return (b.yearOfDeath - b.yearOfBirth) - (a.yearOfDeath - a.yearOfBirth);
     })
     return newArr[0];
